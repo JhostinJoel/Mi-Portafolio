@@ -1,0 +1,375 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Color de fondo suave */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+.App-header {
+  background-color: #b1d1f3; /* Azul brillante */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Estilos para la barra de navegación */
+.App-nav {
+  background-color: #b5d4f5; /* Azul brillante */
+  color: white;
+  text-align: center;
+
+}
+
+.App-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App-nav li {
+  display: inline-block;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.App-nav li:hover,
+.App-nav li.active {
+  color: #ffcc00; /* Amarillo al hacer hover o activo */
+}
+
+/* Estilos para las secciones principales */
+.App-main {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App-section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Estilos para la sección "Sobre Mí" en estilo CV */
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Columnas: imagen de perfil y contenido */
+  gap: 20px;
+}
+
+.cv-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-info {
+  font-size: 1.2rem;
+}
+
+.cv-skills {
+  grid-column: span 2; /* Ocupa todo el ancho */
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+/* Estilos para detalles de proyectos */
+.project-header {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+.App-footer {
+  background-color: #343a40; /* Gris oscuro */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo para el panel de redes sociales */
+.social-panel {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.social-panel a {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.social-panel a:hover {
+  color: #61dafb;
+}
+
+.matrix-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+/* App.css */
+
+/* Otros estilos */
+/* App.css */
+
+/* Otros estilos */
+/* App.css */
+
+/* Otros estilos */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.App-nav li {
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.App-nav li.active {
+  border-bottom: 2px solid #61dafb;
+}
+
+.App-main {
+  padding: 20px;
+  position: relative;
+}
+
+.App-section {
+  margin-bottom: 20px;
+}
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.profile-info h3 {
+  margin: 0;
+}
+
+.cv-body {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cv-section {
+  margin-bottom: 20px;
+}
+
+.cv-skills {
+  margin-top: 20px;
+}
+
+.cv-skills .tech-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cv-skills .tech-icons svg {
+  transition: transform 0.3s, color 0.3s;
+  padding: 10px;
+}
+
+.cv-skills .tech-icons svg:hover {
+  transform: scale(1.2);
+  color: #61dafb;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para el fondo de Matrix */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5; /* Ajusta este valor para la transparencia */
+}
+
+.matrix-bg canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para el panel de redes sociales */
+.social-panel {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.social-panel a {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.social-panel a:hover {
+  color: #61dafb;
+}
+
+/* Estilos y animaciones para la lista de proyectos */
+.project-list {
+  position: relative;
+  z-index: 1;
+}
+
+.project-header {
+  font-size: 1.2em;
+  margin: 10px 0;
+  cursor: pointer;
+  animation: fadeIn 1s ease;
+}
+
+.project-details {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin-top: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.cv-section .tech-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cv-section .tech-icons .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Ajusta el tamaño según tus necesidades */
+  height: 60px; /* Ajusta el tamaño según tus necesidades */
+  background-color: #f0f0f0; /* Color de fondo */
+  border-radius: 50%; /* Para hacerlo circular */
+  transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+  cursor: pointer;
+}
+
+.cv-section .tech-icons .icon-container:hover {
+  transform: scale(1.2); /* Escalar al hacer hover */
+  background-color: #61dafb; /* Cambio de color al hacer hover */
+  border: 2px solid #f0f000; 
+}
+
+.cv-section .tech-icons .icon-container svg {
+  font-size: 2rem; /* Tamaño del icono */
+  color: #333; /* Color inicial del icono */
+  transition: transform 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.cv-section .tech-icons .icon-container:hover svg {
+  transform: scale(1.2); /* Escalar el icono al hacer hover */
+  color: white; /* Cambiar el color del icono al hacer hover */
+}
